@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.login{
+    border:5px solid white;
+    border-radius:30px;
+    display:flex;
+    width:80vw;
+    height:90vh;
+    background-color: rgb(255, 255, 255);
+    margin:auto;
+    margin-top:1vh;
+ }
+ .slider{
+    width:50%;   
+    margin:15px;
+    position: relative;
+ }
+ .images{
+  border-radius:10px;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  display:flex;
+  flex-direction: row;
+  transition-duration: 1s;
+ }
+ .image1, .image2, .image3{
+     min-width:100%; 
+ }
+ .left-scroll-btn{
+   background-color: transparent;
+   color:black;
+   position: absolute;
+   left:0;
+   top:50%;
+   border:none;
+ }
+ .right-scroll-btn{
+   background-color: transparent;
+   color:black;
+   position: absolute;
+   right:0;
+   top:50%;
+   border:none;
+ }
+ .indicators {
+  position: absolute; /* Fixed positioning */
+  bottom: 10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure the indicators are above the slider */
+}
+ .indicators span{
+  margin:5px;
+  
+ }
+ .login-form{
+    width:60%;
+    height:100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    color: black;
+    justify-content: center;
+    gap: 5px;
+ }
+ .forgot-password{
+    margin-top:0;
+    margin-left:-45px;
+ }
+.error-msg{
+  background-color:bisque;
+  padding: 0 5px;
+  border-radius:3px;
+}
+.error-msg-delete{
+  background-color: transparent;
+}
+.error-msg-delete:hover{
+  background-color:black;
+}
